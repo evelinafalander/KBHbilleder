@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Københavnerbilleder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Heebo:wght@700;800;900&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="relative">
-        <img src="img/agfa2.webp" alt="heroimng" />
-        <h1 class="absolute top-1/2 left-5 text-3xl font-bold text-white">
+        <img src="img/nikkormat.webp" alt="heroimng" />
+        <h1 class="absolute top-2/3 left-5 text-4xl font-bold text-white">
           Københavnerbilleder
         </h1>
         <p class="absolute bottom-8 left-5 text-base text-white">
@@ -21,36 +27,36 @@
         </p>
       </div>
     </header>
-    <main class="[&_h2]:text-2xl [&_h2]:font-semibold">
+    <main class="[&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:uppercase">
       <section class="p-5">
         <h2>Kort om bogen</h2>
         <p>
           Københavnerbilleder er de danske streetfotografers bibel: Det er en
           fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
           væsentlige aspekter af streetfotografering fra grundlæggende teknik
-          til kreative eksperimenter.
-        </p>
-        <p>
-          Alt sammen krydret med masser af inspirerende fotos. God læselyst!
+          til kreative eksperimenter. Alt sammen krydret med masser af
+          inspirerende fotos. God læselyst!
         </p>
 
         <button
-          class="border-y-2 border-black px-3 py-3 text-3xl font-semibold text-[#FEF100] hover:border-x-2"
+          class="border-4 border-blue-800 p-1 text-4xl font-semibold text-[#c12727] hover:bg-[#c12727] hover:text-blue-800"
         >
           KØB NU
         </button>
       </section>
-      <section class="bg-[#CCCCCC]">
-        <img src="boken/bokfront.webp" alt="frontofbook" />
+      <section class="grid grid-cols-2 gap-4 bg-[#CCCCCC] p-5">
+        <img class="self-center" src="boken/bokfront.webp" alt="frontofbook" />
         <div>
-          <h2>Stamdata for bogen</h2>
-          <ul>
-            <li>Titel: Københavnerbilleder - en guide til hipster foto</li>
+          <ul class="leading-6 [&_span]:font-semibold">
+            <li>
+              <span>Titel:</span> Københavnerbilleder - en guide til hipster
+              foto
+            </li>
             <li><span> Forfatter: </span>Sten Simons</li>
             <li><span>Antal sider: </span>344</li>
             <li><span>Forlag: </span>Mellem Linjerne</li>
             <li><span>ISBN: </span>987-6-987654-32-1</li>
-            <li><span>Pris:</span>399.-</li>
+            <li><span>Pris: </span>399.-</li>
           </ul>
         </div>
       </section>
@@ -132,44 +138,51 @@
             street-fotograf.
           </p>
         </div>
+        <div
+          class="col-span-2 text-center tracking-wider underline hover:text-[#e3dd64]"
+        >
+          <a href="#">Download dit prøvekapitel her</a>
+        </div>
       </section>
-      <section class="grid grid-cols-2 gap-3 p-5">
+      <section
+        class="grid grid-cols-2 gap-3 p-5 [&_p]:pt-2 [&_p]:text-sm [&_p]:font-semibold [&_q]:text-sm [&_q]:italic"
+      >
         <h2 class="col-span-2">Personer siger</h2>
         <div class="col-span-2">
           <div class="flex">
-            <svg width="32" height="32" viewBox="0 0 24 24">
+            <svg width="28" height="28" viewBox="0 0 24 24">
               <path
-                fill="currentColor"
+                fill="#CCCCCC"
                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
               />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 24 24">
+            <svg width="28" height="28" viewBox="0 0 24 24">
               <path
-                fill="currentColor"
+                fill="#CCCCCC"
                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
               />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 24 24">
+            <svg width="28" height="28" viewBox="0 0 24 24">
               <path
-                fill="currentColor"
+                fill="#CCCCCC"
                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
               />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 24 24">
+            <svg width="28" height="28" viewBox="0 0 24 24">
               <path
-                fill="currentColor"
+                fill="#CCCCCC"
                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
               />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 24 24">
+            <svg width="28" height="28" viewBox="0 0 24 24">
               <path
-                fill="currentColor"
+                fill="#CCCCCC"
                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
               />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 24 24">
+            <svg width="28" height="28" viewBox="0 0 24 24">
               <path
-                fill="currentColor"
+                fill="#CCCCCC"
                 d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27l1-4.28l-3.32-2.88l4.38-.38L12 6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28L12 15.4z"
               />
             </svg>
@@ -182,14 +195,85 @@
           </q>
           <p>Hanne Hovgaard, Berlingeren</p>
         </div>
-        <div>
+        <div class="pt-1">
+          <div class="flex">
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path
+                fill="#CCCCCC"
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path
+                fill="#CCCCCC"
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path
+                fill="#CCCCCC"
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path
+                fill="#CCCCCC"
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path
+                fill="#CCCCCC"
+                d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27l1-4.28l-3.32-2.88l4.38-.38L12 6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28L12 15.4z"
+              />
+            </svg>
+          </div>
           <q>
             Teksten er underholdende, og billederne er sku'flotte. Hvad mere
             skal man sige om en fotobog?
           </q>
           <p>Kim Kloggaard, Fotojournalen.dk</p>
         </div>
-        <div>
+        <div class="pt-1">
+          <div class="flex">
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path
+                fill="#CCCCCC"
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path
+                fill="#CCCCCC"
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path
+                fill="#CCCCCC"
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path
+                fill="#CCCCCC"
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path
+                fill="#CCCCCC"
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path
+                fill="#CCCCCC"
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+          </div>
           <q>
             Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje
             fotobog er klart den bedste - her er han for alvor i sit rette
@@ -200,27 +284,44 @@
         </div>
       </section>
       <section>
-        <img src="" alt="" />
+        <img src="img/lomosmena.webp" alt="lomosmena" />
+        <img src="img/orestadtil.webp" alt="orestadtil" />
+        <img src="img/orestadtil2.webp" alt="orestadtil2" />
+        <img src="img/agfa1.webp" alt="agfa1" />
       </section>
-      <article>
-        <h2>Forfatteren</h2>
+      <article class="p-5 text-sm">
+        <h2 class="pb-3">Forfatteren</h2>
+
         <p>
           Sten Simons har en lang foto-karriere bag sig. Det hele startede i
           00'erne, da han gik rundt i Pisserenden for at fotografere ungdommens
           forfald. Det ledte til en række udstillinger, og blev senere til hans
           først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”
         </p>
-        <p>
+        <img src="img/stensimons.webp" alt="stensimons" />
+
+        <p class="pt-4">
           Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede
           en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.”
           Sideløbende begyndte han at undervise i foto, og har skrevet et utal
           af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en
           visuel odysse, og lærebogen Fotografering for evnesvage.
         </p>
-        <img src="" alt="" />
       </article>
+      <section class="relative grid grid-cols-2">
+        <img src="img/tall-bnw.webp" alt="photo" />
+        <img src="img/tallbnw2.webp" alt="blackandwhiteimage" />
+        <button
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-4 p-1 text-5xl text-white hover:bg-black"
+        >
+          KØB NU
+        </button>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="bg-blue-800 p-7 text-sm font-normal text-white">
+      <p>Student project by Evelina Falander</p>
+      <p>Multimediadesign, KEA 2022</p>
+    </footer>
 
     <script type="module" src="./main.js"></script>
   </body>
