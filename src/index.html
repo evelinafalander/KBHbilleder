@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <div class="relative">
+      <div class="relative border-b-4 border-blue-800">
         <img src="img/nikkormat.webp" alt="heroimng" />
         <h1
           class="absolute bottom-1/4 left-5 text-3xl font-bold tracking-wider text-white"
@@ -33,14 +33,17 @@
       class="[&_h2]:py-2 [&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:uppercase"
     >
       <section class="p-5">
-        <h2>Kort om bogen</h2>
-        <p>
-          Københavnerbilleder er de danske streetfotografers bibel: Det er en
-          fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
-          væsentlige aspekter af streetfotografering fra grundlæggende teknik
-          til kreative eksperimenter. Alt sammen krydret med masser af
-          inspirerende fotos. God læselyst!
-        </p>
+        <div class="align-center grid grid-cols-2">
+          <h2 class="col-span-2">Kort om bogen</h2>
+          <p>
+            Københavnerbilleder er de danske streetfotografers bibel: Det er en
+            fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
+            væsentlige aspekter af streetfotografering fra grundlæggende teknik
+            til kreative eksperimenter. Alt sammen krydret med masser af
+            inspirerende fotos. God læselyst!
+          </p>
+          <img src="img/tall3.webp" alt="" />
+        </div>
         <div class="flex justify-center pt-10">
           <button
             class="border-4 border-blue-800 p-1 text-4xl font-semibold text-[#c12727] hover:bg-[#c12727] hover:text-blue-800"
@@ -49,14 +52,14 @@
           </button>
         </div>
       </section>
-      <section class="border-b-4 px-5 pb-4">
+      <section class="grid grid-cols-2 gap-4 px-5 pb-4 pt-4">
         <img
           class="self-center"
           src="boken/boktransparent.webp"
           alt="frontofbook"
         />
         <div>
-          <ul class="leading-6 [&_span]:font-semibold">
+          <ul class="text-xs leading-6 [&_span]:font-semibold">
             <li>
               <span>Titel:</span> Københavnerbilleder - en guide til hipster
               foto
