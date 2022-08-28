@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -21,12 +21,29 @@
         >
           Københavnerbilleder
         </h1>
-        <p class="absolute bottom-8 left-5 text-base text-white md:text-xl">
+        <p
+          class="absolute bottom-8 left-5 text-base text-white md:text-xl lg:left-12 lg:bottom-12 lg:text-2xl"
+        >
           En guide til hipster foto
         </p>
-        <p class="absolute bottom-2 left-5 text-base text-white md:text-xl">
+        <p
+          class="absolute bottom-2 left-5 text-base text-white md:text-xl lg:left-12 lg:bottom-4 lg:text-2xl"
+        >
           Af Sten Simons
         </p>
+        <a href="#bok">
+          <svg
+            class="absolute bottom-2 right-5 lg:top-2/3"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="m20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8l8-8z"
+            />
+          </svg>
+        </a>
       </div>
     </header>
     <main
@@ -35,7 +52,7 @@
       <div class="lg:grid lg:grid-cols-2">
         <section class="p-5 md:px-12">
           <div>
-            <h2>Kort om bogen</h2>
+            <h2 id="bok">Kort om bogen</h2>
             <p class="lg:pt-4">
               Københavnerbilleder er de danske streetfotografers bibel: Det er
               en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
@@ -309,7 +326,9 @@
         <img src="img/orestadtil2.webp" alt="orestadtil2" />
         <img class="lg:place-self-end" src="img/agfa1.webp" alt="agfa1" />
       </section>
-      <article class="p-5 text-sm md:px-12 lg:grid lg:grid-cols-3 lg:gap-6">
+      <article
+        class="p-5 text-sm md:px-12 lg:grid lg:grid-cols-3 lg:gap-6 lg:border-t-4 lg:border-[#c12727]"
+      >
         <h2 class="pb-3 lg:col-span-3">Forfatteren</h2>
 
         <p class="pb-4 lg:pb-0">
@@ -348,9 +367,7 @@
         </button>
       </section>
     </main>
-    <footer
-      class="border-t-4 border-[#c12727] p-7 text-sm font-normal text-black"
-    >
+    <footer class="bg-blue-800 p-7 text-sm font-normal text-white">
       <p>Student project by Evelina Falander</p>
       <p>Multimediadesign, KEA 2022</p>
     </footer>
