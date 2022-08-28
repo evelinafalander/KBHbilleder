@@ -17,49 +17,57 @@
       <div class="relative border-b-4 border-blue-800">
         <img src="img/nikkormat.webp" alt="heroimng" />
         <h1
-          class="absolute bottom-1/4 left-5 text-3xl font-bold tracking-wider text-white"
+          class="absolute bottom-1/4 left-5 text-3xl font-bold tracking-wider text-white md:text-6xl lg:top-1/2 lg:left-12 lg:text-8xl"
         >
           Københavnerbilleder
         </h1>
-        <p class="absolute bottom-8 left-5 text-base text-white">
+        <p class="absolute bottom-8 left-5 text-base text-white md:text-xl">
           En guide til hipster foto
         </p>
-        <p class="absolute bottom-2 left-5 text-base text-white">
+        <p class="absolute bottom-2 left-5 text-base text-white md:text-xl">
           Af Sten Simons
         </p>
       </div>
     </header>
     <main
-      class="[&_h2]:py-2 [&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:uppercase"
+      class="[&_h2]:py-2 [&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:uppercase md:[&_p]:text-lg"
     >
-      <section class="p-5">
-        <div class="align-center grid grid-cols-2">
-          <h2 class="col-span-2">Kort om bogen</h2>
-          <p>
-            Københavnerbilleder er de danske streetfotografers bibel: Det er en
-            fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
-            væsentlige aspekter af streetfotografering fra grundlæggende teknik
-            til kreative eksperimenter. Alt sammen krydret med masser af
-            inspirerende fotos. God læselyst!
-          </p>
-          <img src="img/tall3.webp" alt="" />
-        </div>
-        <div class="flex justify-center pt-10">
+      <div class="lg:grid lg:grid-cols-2">
+        <section class="p-5 md:px-12">
+          <div>
+            <h2>Kort om bogen</h2>
+            <p class="lg:pt-4">
+              Københavnerbilleder er de danske streetfotografers bibel: Det er
+              en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
+              væsentlige aspekter af streetfotografering fra grundlæggende
+              teknik til kreative eksperimenter. Alt sammen krydret med masser
+              af inspirerende fotos. God læselyst!
+            </p>
+          </div>
+        </section>
+        <div
+          class="relative flex items-center justify-center pt-1 lg:px-12 lg:pt-10"
+        >
           <button
-            class="border-4 border-blue-800 p-1 text-4xl font-semibold text-[#c12727] hover:bg-[#c12727] hover:text-blue-800"
+            class="absolute z-10 border-4 border-blue-800 p-1 text-5xl font-medium text-[#c12727] hover:bg-[#c12727] hover:text-blue-800"
           >
             KØB NU
           </button>
+          <img class="opacity-70" src="img/tall3.webp" alt="imgfrombook" />
         </div>
-      </section>
-      <section class="grid grid-cols-2 gap-4 px-5 pb-4 pt-4">
+      </div>
+      <section
+        class="grid grid-cols-2 gap-4 px-5 pb-4 pt-4 sm:gap-14 sm:p-8 lg:py-0"
+      >
         <img
-          class="self-center"
+          class="self-center lg:h-2/3 lg:place-self-center"
           src="boken/boktransparent.webp"
           alt="frontofbook"
         />
-        <div>
-          <ul class="text-xs leading-6 [&_span]:font-semibold">
+        <div class="sm:self-center">
+          <ul
+            class="text-xs leading-6 sm:text-lg lg:text-xl lg:leading-10 [&_span]:font-semibold"
+          >
             <li>
               <span>Titel:</span> Københavnerbilleder - en guide til hipster
               foto
@@ -73,7 +81,7 @@
         </div>
       </section>
       <section
-        class="grid grid-cols-2 gap-6 bg-[#F2F2F2] p-5 [&_h3]:font-semibold"
+        class="grid grid-cols-2 gap-6 bg-[#F2F2F2] p-5 md:px-12 [&_h3]:font-semibold"
       >
         <h2 class="col-span-2">Bogens kapitler</h2>
         <div>
@@ -151,16 +159,16 @@
           </p>
         </div>
         <div
-          class="col-span-2 text-center tracking-wider underline hover:text-[#e3dd64]"
+          class="col-span-2 text-center tracking-wider underline hover:text-[#c12727]"
         >
           <a href="#">Download dit prøvekapitel her</a>
         </div>
       </section>
       <section
-        class="grid grid-cols-2 gap-3 border-y-4 border-blue-800 p-3 [&_p]:pt-2 [&_p]:text-sm [&_p]:font-semibold [&_q]:text-sm [&_q]:italic"
+        class="grid grid-cols-2 gap-3 border-y-4 border-blue-800 p-3 md:px-12 lg:gap-10 lg:py-10 [&_p]:pt-2 [&_p]:text-sm [&_p]:font-semibold [&_q]:text-sm [&_q]:italic"
       >
         <h2 class="col-span-2">Personer siger</h2>
-        <div class="col-span-2">
+        <div class="col-span-2 lg:col-span-1">
           <div class="flex">
             <svg width="28" height="28" viewBox="0 0 24 24">
               <path
@@ -247,7 +255,7 @@
           </q>
           <p>Kim Kloggaard, Fotojournalen.dk</p>
         </div>
-        <div class="pt-1">
+        <div class="pt-1 lg:col-span-2 lg:pl-60 lg:pr-40">
           <div class="flex">
             <svg width="28" height="28" viewBox="0 0 24 24">
               <path
@@ -295,16 +303,16 @@
           <p>Volmer Hansen, Lukkertiden.dk</p>
         </div>
       </section>
-      <section>
+      <section class="lg:grid lg:grid-cols-2 lg:gap-7 lg:px-12 lg:py-10">
         <img src="img/lomosmena.webp" alt="lomosmena" />
         <img src="img/orestadtil.webp" alt="orestadtil" />
         <img src="img/orestadtil2.webp" alt="orestadtil2" />
-        <img src="img/agfa1.webp" alt="agfa1" />
+        <img class="lg:place-self-end" src="img/agfa1.webp" alt="agfa1" />
       </section>
-      <article class="p-5 text-sm">
-        <h2 class="pb-3">Forfatteren</h2>
+      <article class="p-5 text-sm md:px-12 lg:grid lg:grid-cols-3 lg:gap-6">
+        <h2 class="pb-3 lg:col-span-3">Forfatteren</h2>
 
-        <p class="pb-4">
+        <p class="pb-4 lg:pb-0">
           Sten Simons har en lang foto-karriere bag sig. Det hele startede i
           00'erne, da han gik rundt i Pisserenden for at fotografere ungdommens
           forfald. Det ledte til en række udstillinger, og blev senere til hans
@@ -312,7 +320,7 @@
         </p>
         <img src="img/stensimons.webp" alt="stensimons" />
 
-        <p class="pt-4">
+        <p class="pt-4 lg:pt-0">
           Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede
           en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.”
           Sideløbende begyndte han at undervise i foto, og har skrevet et utal
@@ -320,18 +328,28 @@
           visuel odysse, og lærebogen Fotografering for evnesvage.
         </p>
       </article>
-      <section class="relative grid grid-cols-2">
-        <img src="img/tall-bnw.webp" alt="photo" />
-        <img src="img/tallbnw2.webp" alt="blackandwhiteimage" />
+      <section
+        class="relative grid grid-cols-2 lg:border-t-4 lg:border-[#c12727]"
+      >
+        <img
+          class="lg:w-2/3 lg:justify-self-end"
+          src="img/tall-bnw.webp"
+          alt="photo"
+        />
+        <img
+          class="lg:w-2/3"
+          src="img/tallbnw2.webp"
+          alt="blackandwhiteimage"
+        />
         <button
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-4 p-1 text-5xl text-white hover:bg-black"
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-white p-1 text-5xl text-white hover:bg-black lg:border-8 lg:text-7xl"
         >
           KØB NU
         </button>
       </section>
     </main>
     <footer
-      class="border-t-4 border-blue-800 p-7 text-sm font-normal text-black"
+      class="border-t-4 border-[#c12727] p-7 text-sm font-normal text-black"
     >
       <p>Student project by Evelina Falander</p>
       <p>Multimediadesign, KEA 2022</p>
